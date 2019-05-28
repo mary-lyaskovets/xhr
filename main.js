@@ -74,8 +74,6 @@ aj.utils.method.searchUser = function (val) {
         aj.users.forEach((element, index) => {
             if (element.first_name.match(val) || element.last_name.match(val)) {
                 document.querySelector(`li:nth-child(${index+1})`).classList.add('hightlight');
-            } else {
-
             }
         });
     }
